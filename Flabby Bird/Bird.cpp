@@ -39,7 +39,7 @@ void Bird::draw()
 
 void Bird::tick(bool isMouseDown )
 {
-	velocity -= isMouseDown ? 0.003 : 0;
+	velocity -= isMouseDown ? 0.0025 : 0;
 	
 	velocity += gravity;
 	y += velocity;
